@@ -47,13 +47,13 @@ st.write('## Input value')
 #value_df = value_df.append(record, ignore_index=True)
 
 # インプットデータ（1行のデータフレーム）
-#value_df = pd.DataFrame({'data':'data', 'stem length (cm)':stemValue, 'leaf length (cm)':leafValue}, index=[0])
-#value_df.set_index('data', inplace=True)
+value_df = pd.DataFrame({'data':'data', 'stem length (cm)':stemValue, 'leaf length (cm)':leafValue}, index=[0])
+value_df.set_index('data', inplace=True)
 
-value_df = pd.DataFrame([],columns=['data','stem length (cm)','leaf length (cm)'])
-record = pd.Series(['data',stemValue, leafValue], index=value_df.columns)
-value_df = value_df.append(record, ignore_index=True)
-value_df.set_index("data",inplace=True)
+#value_df = pd.DataFrame([],columns=['data','stem length (cm)','leaf length (cm)'])
+#record = pd.Series(['data',stemValue, leafValue], index=value_df.columns)
+#value_df = value_df.append(record, ignore_index=True)
+#value_df.set_index("data",inplace=True)
 
 # 入力値の値
 st.write(value_df)
